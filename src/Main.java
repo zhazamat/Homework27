@@ -20,8 +20,15 @@ public class Main {
         for (var actor : actors) {
             System.out.println(actor);
         }
-
-
+        System.out.println("--------------------------------------------------------");
+        for (var m : movies) {
+            for (var actor : actors) {
+                if (m.getActor().equals(actor.fullName())) {
+                    System.out.println("Actor: " + m.getActor() + " filmed " + m.getMoviesName() + " movies");
+                }
+            }
+        }
+        System.out.println("----------------------------------------------------------");
     }
 
     public static void main(String[] args) {
@@ -67,8 +74,11 @@ public class Main {
         Movies[] movie = MovieService.readFile();
         List<Movies> list = new LinkedList<>();
         for (var m : movie) {
+
             list.add(m);
+
         }
+
 
         System.out.println(list);
 
@@ -105,6 +115,7 @@ public class Main {
         }
         TreeSet<String> myTreeSet = new TreeSet(movies1);
         System.out.println(myTreeSet);
+
     }
 
     public static void sortMap() {
