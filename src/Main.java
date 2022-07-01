@@ -29,6 +29,12 @@ public class Main {
             }
         }
         System.out.println("----------------------------------------------------------");
+        for (var m : movies) {
+            if (m.getProducer().equals("Sandra Bullock")) {
+                System.out.println("Producer" + m.getProducer() + "film" + m.getMoviesName());
+            }
+        }
+
     }
 
     public static void main(String[] args) {
