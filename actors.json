@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "firstName": "BRAD",
+    "lastName": "PITT",
+    "birthDate": "1963-12-18",
+    "bio": "KJBIO"
+  },
+  {
+    "id": 2,
+    "firstName": "DWAYNE",
+    "lastName": "JOHNSON",
+    "birthDate": "1972-05-02",
+    "bio": "KJBIO"
+  },
+  {
+    "id": 3,
+    "firstName": "WILL",
+    "lastName": "SMITH",
+    "birthDate": "1968-09-28",
+    "bio": "KJBIO"
+  }
+]

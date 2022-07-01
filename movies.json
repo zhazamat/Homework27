@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "moviesName": "Bullet Train",
+    "releaseOfFilm": 2022,
+    "producer": "David Leitch",
+    "actor": "BRAD PITT"
+  },
+  {
+    "id": 2,
+    "moviesName": "The Lost City ",
+    "releaseOfFilm": 2003,
+    "producer": "Sandra Bullock",
+    "actor": "BRAD PITT"
+  },
+  {
+    "id": 3,
+    "moviesName": "King Richard ",
+    "releaseOfFilm": 2021,
+    "producer": "Sandra Bullock",
+    "actor": "DWAYNE JOHNSON"
+  },
+  {
+    "id": 4,
+    "moviesName": "Ad Astra ",
+    "releaseOfFilm": 2019,
+    "producer": "James Gray",
+    "actor": "WILL SMITH"
+  }
+]
