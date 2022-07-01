@@ -34,6 +34,11 @@ public class Main {
                 System.out.println("Producer" + m.getProducer() + "film" + m.getMoviesName());
             }
         }
+        for (var m : movies) {
+            if (m.getReleaseOfFilm() == 2022) {
+                System.out.println("ReleaseOfFilm" + m.getReleaseOfFilm() + "film" + m.getMoviesName());
+            }
+        }
 
     }
 
