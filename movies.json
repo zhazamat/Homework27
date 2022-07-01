@@ -4,34 +4,39 @@
     "moviesName": "Bullet Train",
     "releaseOfFilm": 2022,
     "producer": "David Leitch",
-    "actor": "BRAD PITT"
+    "actor": "BRAD PITT",
+    "role": "JJJ"
   },
   {
     "id": 2,
     "moviesName": "The Lost City ",
     "releaseOfFilm": 2003,
     "producer": "Sandra Bullock",
-    "actor": "BRAD PITT"
+    "actor": "BRAD PITT",
+    "role": "AAA"
   },
   {
     "id": 3,
     "moviesName": "King Richard ",
     "releaseOfFilm": 2021,
     "producer": "Sandra Bullock",
-    "actor": "DWAYNE JOHNSON"
+    "actor": "DWAYNE JOHNSON",
+    "role": "BBB"
   },
   {
     "id": 4,
     "moviesName": "Ad Astra ",
     "releaseOfFilm": 2019,
     "producer": "James Gray",
-    "actor": "WILL SMITH"
+    "actor": "WILL SMITH",
+    "role": "CCC"
   },
   {
     "id": 5,
-    "moviesName": "Ad Astra ",
+    "moviesName": "SFEGR",
     "releaseOfFilm": 2019,
-    "producer": "James Gray",
-    "actor": "zsf"
+    "producer": "DWAYNE JOHNSON",
+    "actor": "zsf",
+    "role": "JJJ"
   }
 ]

@@ -4,7 +4,7 @@ public class Movies implements Comparable {
     private Integer releaseOfFilm;
     private String producer;
     private String actor;
-
+    private String role;
     public Integer getId() {
         return id;
     }
@@ -43,6 +43,13 @@ public class Movies implements Comparable {
         return actor;
     }
 
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
 
     public void setActor(String actor) {
         this.actor = actor;
@@ -62,9 +69,25 @@ public class Movies implements Comparable {
         movies[1].setActor(actors[0].fullName());
         movies[2].setActor(actors[1].fullName());
         movies[3].setActor(actors[2].fullName());
+        movies[0].setRole("JJJ");
+        movies[1].setRole("AAA");
+        movies[2].setRole("BBB");
+        movies[3].setRole("CCC");
         MovieService.writeFile(movies);
-        System.out.println(String.format("|%15s|", getActor()));
+        System.out.print(String.format("|%15s|", getActor()));
 
+    }
+
+    @Override
+    public void addRole() {
+        Movies[] movies = MovieService.readFile();
+        movies[0].setRole("JJJ");
+        movies[1].setRole("AAA");
+        movies[2].setRole("BBB");
+        movies[3].setRole("CCC");
+        movies[4].setRole("JJJ");
+        MovieService.writeFile(movies);
+        System.out.println(String.format("%15s|", getRole()));
     }
 
 }

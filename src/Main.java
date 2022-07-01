@@ -4,15 +4,16 @@ public class Main {
     static void Run() {
 
         Movies[] movies = MovieService.readFile();
-        System.out.println("-------------------------------------------------------------------------------");
-        System.out.println(String.format("|%3s", "id") + String.format("|%20s", "Movies Name") + String.format("|%15s", "Release of film") + String.format("|%20s", "Producer") + String.format("|%15s|", "Actor"));
-        System.out.println("-------------------------------------------------------------------------------");
+        System.out.println("-----------------------------------------------------------------------------------------------");
+        System.out.println(String.format("|%3s", "id") + String.format("|%20s", "Movies Name") + String.format("|%15s", "Release of film") + String.format("|%20s", "Producer") + String.format("|%15s|", "Actor") + String.format("|%15s|", "Role"));
+        System.out.println("-----------------------------------------------------------------------------------------------");
         for (var movie : movies) {
             System.out.print(movie);
             movie.addActor();
+            movie.addRole();
         }
-        System.out.println("-------------------------------------------------------------------------------");
-        System.out.println("Ex: 2");
+        System.out.println("------------------------------------------------------------------------------------------------");
+
         System.out.println("-------------------------------------------------------------------------------");
         Actor[] actors = ActorService.readFile();
         System.out.println(String.format("|%3s", "id") + String.format("|%20s", "FullName") + String.format("|%32s", "BirthDate") + String.format("|%10s", "Biography"));
@@ -39,8 +40,17 @@ public class Main {
                 System.out.println("ReleaseOfFilm" + m.getReleaseOfFilm() + "film" + m.getMoviesName());
             }
         }
+        System.out.println("------------------------------------------------------------------------------");
+        for (var m : movies) {
 
+            if (m.getActor().equals("BRAD PITT")) {
+                System.out.println("Actor: " + m.getActor() + " rolled " + m.getRole() + " film " + m.getMoviesName());
+
+            }
+        }
+        System.out.println("------------------------------------------------------------------------------");
     }
+
 
     public static void main(String[] args) {
         Run();
