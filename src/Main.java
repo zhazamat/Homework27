@@ -12,6 +12,8 @@ public class Main {
             movie.addActor();
             movie.addRole();
         }
+        System.out.println("-----------------------------");
+        System.out.println("Total: " + Arrays.stream(movies).count() + " movies ");
         System.out.println("------------------------------------------------------------------------------------------------");
 
         System.out.println("-------------------------------------------------------------------------------");
@@ -21,6 +23,10 @@ public class Main {
         for (var actor : actors) {
             System.out.println(actor);
         }
+        System.out.println("-----------------------------");
+        System.out.println("Total: " + Arrays.stream(actors).count() + " actors ");
+
+
         System.out.println("--------------------------------------------------------");
         for (var m : movies) {
             for (var actor : actors) {
@@ -53,17 +59,27 @@ public class Main {
 
 
     public static void main(String[] args) {
+        System.out.println("----------------------------------------------------------------------------------------------------------");
         Run();
+        System.out.println("----------------------------------------------------------------------------------------------------------");
         System.out.println("LinkedList");
+
         sortLinkedList();
+        System.out.println("----------------------------------------------------------------------------------------------------------");
         System.out.println("ArrayList");
         sortArrayList();
+        System.out.println("---------------------------------------------------------------------------------------------------------");
         System.out.println("HASHSET");
+
         sortSet();
+        System.out.println("--------------------------------------------------------------------------------------------------------");
         System.out.println("HASHMAP");
+
         sortMap();
+        System.out.println("-------------------------------------------------------------");
         System.out.println("Queue");
         sortQueue();
+        System.out.println("-------------------------------------------------------------");
     }
 
     public static void sortLinkedList() {

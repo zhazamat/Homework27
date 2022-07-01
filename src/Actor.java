@@ -55,4 +55,6 @@ public class Actor {
    public String toString() {
       return String.format("|%3s", id) + String.format("|%20s", fullName()) + String.format("|%32s", birthDate) + String.format("|%10s", bio);
    }
+
+
 }
