@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class Main {
-    static void Run() {
+    static void run() {
 
         Movies[] movies = MovieService.readFile();
         System.out.println("-----------------------------------------------------------------------------------------------");
@@ -60,7 +60,7 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("----------------------------------------------------------------------------------------------------------");
-        Run();
+        run();
         System.out.println("----------------------------------------------------------------------------------------------------------");
         System.out.println("LinkedList");
 
